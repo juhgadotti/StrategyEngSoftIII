@@ -1,0 +1,59 @@
+//ICalcMedia
+//public double CalculaMedia(double p1, double p2);
+//public string Situacao(new CalculaMedia());
+ 
+ 
+public class Disciplina {  
+    //implementar interface
+    private ICalcMedia calcMedia;
+    private double media, p1, p2;
+    private string nome, situacao;
+ 
+    public Disciplina(ICalcMedia calcMedia, double media, double p1, double p2, string nome, string situacao){
+        this.calcMedia = calcMedia;
+        this.media = media;
+        this.p1 = p1;
+        this.p2 = p2;
+        this.nome = nome;
+        this.situacao = situacao;
+    }
+ 
+    public void CalculaMedia(){
+ 
+    }
+ 
+    public overload Disciplina(){
+ 
+    }
+}
+ 
+ 
+ 
+public class Aritmetica {
+ 
+    public double CalculaMedia(double p1, double p2){
+            return (p1 + p2) / 2;
+    }
+   
+    public string Situacao(double CalculaMedia()){
+            if(CalculaMedia() > 5){
+                return "aprovado";
+            }
+            return "reprovado";
+    }
+}
+ 
+public class Geometrica {
+ 
+    public double CalculaMedia(double p1, double p2){
+        return p1 + p2; //raiz quadrada disso
+    }
+ 
+    public string Situacao (double aa){
+        if(CalculaMedia() > 5){
+            return "aprovado";
+        }
+        return "reprovado";
+ 
+    }
+}
